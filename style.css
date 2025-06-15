@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  background: #f7faff;
+  text-align: center;
+  padding: 20px;
+}
+
+#game-area {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.player-section {
+  margin: 10px;
+}
+
+.bingo-board {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  gap: 6px;
+  justify-content: center;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 2px solid #333;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell.marked {
+  background: #90ee90;
+}
+
+.cell.free {
+  background: #add8e6;
+  pointer-events: none;
+}
+
+#controls {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin: 10px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multiplayer Bingo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Multiplayer Bingo 🎲</h1>
+  <div id="game-area">
+    <div class="player-section">
+      <h2>Player 1</h2>
+      <div class="bingo-board" id="board1"></div>
+    </div>
+    <div class="player-section">
+      <h2>Player 2</h2>
+      <div class="bingo-board" id="board2"></div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <button onclick="drawNumber()">🎯 Draw Number</button>
+    <p>Number Drawn: <span id="current-number">--</span></p>
+    <p id="winner"></p>
+  </div>
+
+  <button onclick="startGame()">🔁 New Game</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
